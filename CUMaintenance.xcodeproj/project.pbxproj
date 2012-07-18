@@ -53,13 +53,6 @@
 			remoteGlobalIDString = 2C542393145ADEBD0026A152;
 			remoteInfo = QuickDialog;
 		};
-		46FCC3F615154DD70015D48A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C542392145ADEBD0026A152;
-			remoteInfo = QuickDialog;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -262,7 +255,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				46FCC3F715154DD70015D48A /* PBXTargetDependency */,
 			);
 			name = CUMaintenance;
 			productName = CUMaintenance;
@@ -356,14 +348,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		46FCC3F715154DD70015D48A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QuickDialog;
-			targetProxy = 46FCC3F615154DD70015D48A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4660AB64151537BD0086FFA8 /* InfoPlist.strings */ = {
