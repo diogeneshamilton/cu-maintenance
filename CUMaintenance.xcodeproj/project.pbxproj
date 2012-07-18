@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46477EEA1515614D0083DD36 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 46477ECE1515614D0083DD36 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EEB1515614D0083DD36 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477ED11515614D0083DD36 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EEC1515614D0083DD36 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477ED31515614D0083DD36 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EED1515614D0083DD36 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477ED51515614D0083DD36 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EEE1515614D0083DD36 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477ED71515614D0083DD36 /* OAAsynchronousDataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EEF1515614D0083DD36 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477ED91515614D0083DD36 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF01515614D0083DD36 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EDB1515614D0083DD36 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF11515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EDD1515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF21515614D0083DD36 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EDF1515614D0083DD36 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF31515614D0083DD36 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EE11515614D0083DD36 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF41515614D0083DD36 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EE31515614D0083DD36 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF51515614D0083DD36 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EE51515614D0083DD36 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF61515614D0083DD36 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EE81515614D0083DD36 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46477EF9151566620083DD36 /* MaintenanceDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 46477EF8151566620083DD36 /* MaintenanceDialog.m */; };
 		4660AB5A151537BD0086FFA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4660AB59151537BD0086FFA8 /* UIKit.framework */; };
 		4660AB5C151537BD0086FFA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4660AB5B151537BD0086FFA8 /* Foundation.framework */; };
 		4660AB5E151537BD0086FFA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4660AB5D151537BD0086FFA8 /* CoreGraphics.framework */; };
@@ -17,9 +31,68 @@
 		4660AB6F151537BD0086FFA8 /* CUMaintenance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4660AB6D151537BD0086FFA8 /* CUMaintenance.xcdatamodeld */; };
 		4660AB83151539480086FFA8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4660AB82151539480086FFA8 /* MainViewController.m */; };
 		4660AB8915153F980086FFA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4660AB8815153F980086FFA8 /* MobileCoreServices.framework */; };
+		46AA2F7715155EF300B8077D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AA2F7615155EF300B8077D /* Security.framework */; };
+		46FCC3F815154DD90015D48A /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FCC3F515154D9F0015D48A /* libQuickDialog.a */; };
+		46FCC3FA15154DEE0015D48A /* QuickDialog.h in Sources */ = {isa = PBXBuildFile; fileRef = 46FCC3F915154DEE0015D48A /* QuickDialog.h */; };
+		46FCC44E151556640015D48A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FCC44D151556640015D48A /* CoreLocation.framework */; };
+		46FCC450151556E10015D48A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FCC44F151556E10015D48A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		46FCC3F215154D9F0015D48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		46FCC3F415154D9F0015D48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+		46FCC3F615154DD70015D48A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C542392145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		46477ECE1515614D0083DD36 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		46477ECF1515614D0083DD36 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		46477ED01515614D0083DD36 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		46477ED11515614D0083DD36 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		46477ED21515614D0083DD36 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		46477ED31515614D0083DD36 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		46477ED41515614D0083DD36 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		46477ED51515614D0083DD36 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		46477ED61515614D0083DD36 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		46477ED71515614D0083DD36 /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAsynchronousDataFetcher.m; sourceTree = "<group>"; };
+		46477ED81515614D0083DD36 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		46477ED91515614D0083DD36 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		46477EDA1515614D0083DD36 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		46477EDB1515614D0083DD36 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		46477EDC1515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		46477EDD1515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		46477EDE1515614D0083DD36 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		46477EDF1515614D0083DD36 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		46477EE01515614D0083DD36 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		46477EE11515614D0083DD36 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		46477EE21515614D0083DD36 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		46477EE31515614D0083DD36 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		46477EE41515614D0083DD36 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		46477EE51515614D0083DD36 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		46477EE61515614D0083DD36 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		46477EE71515614D0083DD36 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		46477EE81515614D0083DD36 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		46477EE91515614D0083DD36 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		46477EF7151566620083DD36 /* MaintenanceDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaintenanceDialog.h; sourceTree = "<group>"; };
+		46477EF8151566620083DD36 /* MaintenanceDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaintenanceDialog.m; sourceTree = "<group>"; };
 		4660AB55151537BD0086FFA8 /* CUMaintenance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CUMaintenance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4660AB59151537BD0086FFA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4660AB5B151537BD0086FFA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,6 +108,11 @@
 		4660AB81151539480086FFA8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4660AB82151539480086FFA8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4660AB8815153F980086FFA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		46AA2F7615155EF300B8077D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
+		46FCC3F915154DEE0015D48A /* QuickDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QuickDialog.h; path = QuickDialog/quickdialog/QuickDialog.h; sourceTree = "<group>"; };
+		46FCC44D151556640015D48A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		46FCC44F151556E10015D48A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AA2F7715155EF300B8077D /* Security.framework in Frameworks */,
+				46FCC450151556E10015D48A /* MapKit.framework in Frameworks */,
+				46FCC44E151556640015D48A /* CoreLocation.framework in Frameworks */,
+				46FCC3F815154DD90015D48A /* libQuickDialog.a in Frameworks */,
 				4660AB8915153F980086FFA8 /* MobileCoreServices.framework in Frameworks */,
 				4660AB5A151537BD0086FFA8 /* UIKit.framework in Frameworks */,
 				4660AB5C151537BD0086FFA8 /* Foundation.framework in Frameworks */,
@@ -53,10 +135,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46477ECC1515614D0083DD36 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				46477ECD1515614D0083DD36 /* Crypto */,
+				46477ED01515614D0083DD36 /* NSMutableURLRequest+Parameters.h */,
+				46477ED11515614D0083DD36 /* NSMutableURLRequest+Parameters.m */,
+				46477ED21515614D0083DD36 /* NSString+URLEncoding.h */,
+				46477ED31515614D0083DD36 /* NSString+URLEncoding.m */,
+				46477ED41515614D0083DD36 /* NSURL+Base.h */,
+				46477ED51515614D0083DD36 /* NSURL+Base.m */,
+				46477ED61515614D0083DD36 /* OAAsynchronousDataFetcher.h */,
+				46477ED71515614D0083DD36 /* OAAsynchronousDataFetcher.m */,
+				46477ED81515614D0083DD36 /* OAConsumer.h */,
+				46477ED91515614D0083DD36 /* OAConsumer.m */,
+				46477EDA1515614D0083DD36 /* OADataFetcher.h */,
+				46477EDB1515614D0083DD36 /* OADataFetcher.m */,
+				46477EDC1515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.h */,
+				46477EDD1515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.m */,
+				46477EDE1515614D0083DD36 /* OAMutableURLRequest.h */,
+				46477EDF1515614D0083DD36 /* OAMutableURLRequest.m */,
+				46477EE01515614D0083DD36 /* OAPlaintextSignatureProvider.h */,
+				46477EE11515614D0083DD36 /* OAPlaintextSignatureProvider.m */,
+				46477EE21515614D0083DD36 /* OARequestParameter.h */,
+				46477EE31515614D0083DD36 /* OARequestParameter.m */,
+				46477EE41515614D0083DD36 /* OAServiceTicket.h */,
+				46477EE51515614D0083DD36 /* OAServiceTicket.m */,
+				46477EE61515614D0083DD36 /* OASignatureProviding.h */,
+				46477EE71515614D0083DD36 /* OAToken.h */,
+				46477EE81515614D0083DD36 /* OAToken.m */,
+				46477EE91515614D0083DD36 /* OAuthConsumer.h */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		46477ECD1515614D0083DD36 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				46477ECE1515614D0083DD36 /* Base64Transcoder.c */,
+				46477ECF1515614D0083DD36 /* Base64Transcoder.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
 		4660AB4A151537BD0086FFA8 = {
 			isa = PBXGroup;
 			children = (
-				4660AB8815153F980086FFA8 /* MobileCoreServices.framework */,
 				4660AB61151537BD0086FFA8 /* CUMaintenance */,
 				4660AB58151537BD0086FFA8 /* Frameworks */,
 				4660AB56151537BD0086FFA8 /* Products */,
@@ -74,6 +198,13 @@
 		4660AB58151537BD0086FFA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46477ECC1515614D0083DD36 /* OAuthConsumer */,
+				46FCC3F915154DEE0015D48A /* QuickDialog.h */,
+				46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */,
+				46AA2F7615155EF300B8077D /* Security.framework */,
+				4660AB8815153F980086FFA8 /* MobileCoreServices.framework */,
+				46FCC44F151556E10015D48A /* MapKit.framework */,
+				46FCC44D151556640015D48A /* CoreLocation.framework */,
 				4660AB59151537BD0086FFA8 /* UIKit.framework */,
 				4660AB5B151537BD0086FFA8 /* Foundation.framework */,
 				4660AB5D151537BD0086FFA8 /* CoreGraphics.framework */,
@@ -89,6 +220,8 @@
 				4660AB6B151537BD0086FFA8 /* AppDelegate.m */,
 				4660AB81151539480086FFA8 /* MainViewController.h */,
 				4660AB82151539480086FFA8 /* MainViewController.m */,
+				46477EF7151566620083DD36 /* MaintenanceDialog.h */,
+				46477EF8151566620083DD36 /* MaintenanceDialog.m */,
 				4660AB6D151537BD0086FFA8 /* CUMaintenance.xcdatamodeld */,
 				4660AB62151537BD0086FFA8 /* Supporting Files */,
 			);
@@ -106,6 +239,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		46FCC3EA15154D9E0015D48A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46FCC3F315154D9F0015D48A /* QuickDialogExample.app */,
+				46FCC3F515154D9F0015D48A /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +262,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				46FCC3F715154DD70015D48A /* PBXTargetDependency */,
 			);
 			name = CUMaintenance;
 			productName = CUMaintenance;
@@ -144,12 +287,35 @@
 			mainGroup = 4660AB4A151537BD0086FFA8;
 			productRefGroup = 4660AB56151537BD0086FFA8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 46FCC3EA15154D9E0015D48A /* Products */;
+					ProjectRef = 46FCC3E915154D9E0015D48A /* QuickDialog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4660AB54151537BD0086FFA8 /* CUMaintenance */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		46FCC3F315154D9F0015D48A /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = 46FCC3F215154D9F0015D48A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		46FCC3F515154D9F0015D48A /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = 46FCC3F415154D9F0015D48A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4660AB53151537BD0086FFA8 /* Resources */ = {
@@ -167,14 +333,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FCC3FA15154DEE0015D48A /* QuickDialog.h in Sources */,
 				4660AB68151537BD0086FFA8 /* main.m in Sources */,
 				4660AB6C151537BD0086FFA8 /* AppDelegate.m in Sources */,
 				4660AB6F151537BD0086FFA8 /* CUMaintenance.xcdatamodeld in Sources */,
 				4660AB83151539480086FFA8 /* MainViewController.m in Sources */,
+				46477EEA1515614D0083DD36 /* Base64Transcoder.c in Sources */,
+				46477EEB1515614D0083DD36 /* NSMutableURLRequest+Parameters.m in Sources */,
+				46477EEC1515614D0083DD36 /* NSString+URLEncoding.m in Sources */,
+				46477EED1515614D0083DD36 /* NSURL+Base.m in Sources */,
+				46477EEE1515614D0083DD36 /* OAAsynchronousDataFetcher.m in Sources */,
+				46477EEF1515614D0083DD36 /* OAConsumer.m in Sources */,
+				46477EF01515614D0083DD36 /* OADataFetcher.m in Sources */,
+				46477EF11515614D0083DD36 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				46477EF21515614D0083DD36 /* OAMutableURLRequest.m in Sources */,
+				46477EF31515614D0083DD36 /* OAPlaintextSignatureProvider.m in Sources */,
+				46477EF41515614D0083DD36 /* OARequestParameter.m in Sources */,
+				46477EF51515614D0083DD36 /* OAServiceTicket.m in Sources */,
+				46477EF61515614D0083DD36 /* OAToken.m in Sources */,
+				46477EF9151566620083DD36 /* MaintenanceDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46FCC3F715154DD70015D48A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickDialog;
+			targetProxy = 46FCC3F615154DD70015D48A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4660AB64151537BD0086FFA8 /* InfoPlist.strings */ = {
@@ -208,6 +397,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
@@ -226,6 +416,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -236,10 +427,14 @@
 		4660AB7F151537BD0086FFA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CUMaintenance/CUMaintenance-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/\"";
 				INFOPLIST_FILE = "CUMaintenance/CUMaintenance-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -247,10 +442,14 @@
 		4660AB80151537BD0086FFA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CUMaintenance/CUMaintenance-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/\"";
 				INFOPLIST_FILE = "CUMaintenance/CUMaintenance-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +473,7 @@
 				4660AB80151537BD0086FFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

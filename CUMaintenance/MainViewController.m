@@ -1,11 +1,24 @@
 #import "MainViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <CoreLocation/CoreLocation.h>
+#import "QMultilineElement.h"
+#import "QMultilineTextViewController.h"
 
-@interface MainViewController ()
+#import "MaintenanceDialog.h"
+
+@interface MainViewController () 
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *deviceLocation;
+
+
 
 @end
 
 @implementation MainViewController
+
+@synthesize locationManager;
+@synthesize deviceLocation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,10 +43,10 @@
     
     [viewExistingButton addTarget:self action:@selector(loadWebsite) forControlEvents:UIControlEventTouchUpInside];
 
-    
     [self.view addSubview:submitButton];
     [self.view addSubview:viewExistingButton];
-    
+    [self startUpdatingLocation];
+
 }
 
 - (void)viewDidUnload {
@@ -130,11 +143,69 @@
     
     [picker dismissModalViewControllerAnimated: YES];
     
-//    BackgroundBrowserViewController *backgroundVC = [[BackgroundBrowserViewController alloc] initWithImage:imageToSave];
-    //    ImageBrowserViewController *imageBrowserVC = [[ImageBrowserViewController alloc] initWithImage:imageToSave];
+    QRootElement *root = [[QRootElement alloc] init];
+    root.title = @"Maintenance Request";
+    root.grouped = YES;
+    root.controllerName = @"MaintenanceDialog";
     
+    QSection *section = [[QSection alloc] init];
+    QSection *submitSection = [[QSection alloc] init];
+
+    QMapElement *mapField = [[QMapElement alloc] initWithTitle:@"Location" coordinate:CLLocationCoordinate2DMake(deviceLocation.coordinate.latitude, deviceLocation.coordinate.longitude)];
+    QEntryElement *UNIField = [[QEntryElement alloc] initWithTitle:@"UNI" Value:nil];
+    QEntryElement *roomFloorField = [[QEntryElement alloc] initWithTitle:@"Room/Floor" Value:nil];
+    QMultilineElement *description = [[QMultilineElement alloc] initWithTitle:@"Description" Value:nil];
+    QButtonElement *submitPostButton = [[QButtonElement alloc] initWithTitle:@"Submit" Value:@"Post"];
     
-//    [self.navigationController pushViewController:backgroundVC animated:YES];   
+    [section addElement:UNIField];
+    [section addElement:roomFloorField];
+    [section addElement:description];
+    [section addElement:mapField];
+    
+    [submitSection addElement:submitPostButton];
+    
+    [root addSection:section];
+    [root addSection:submitSection];
+    
+    submitPostButton.controllerAction = @"getUnauthorizedToken";
+    
+    MaintenanceDialog *formController = [QuickDialogController controllerForRoot:root];
+    [self.navigationController pushViewController:formController animated:YES];
+}
+
+#pragma mark - CLLocationDelegate
+
+- (void)startUpdatingLocation {
+    UIAlertView *noLocationAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" 
+                                                              message:@"Location services are turned off. Go to Settings to enable them." 
+                                                             delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Settings", nil];
+    if ([CLLocationManager locationServicesEnabled]) {
+        if([CLLocationManager authorizationStatus] != 3) {
+            NSLog(@"auth status is %o", [CLLocationManager authorizationStatus]);
+            [noLocationAlert show];
+        }
+    }
+    else {[noLocationAlert show];}
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    [locationManager startUpdatingLocation];
+
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation {
+    if (!oldLocation) {
+        self.deviceLocation = newLocation;
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        // TODO: Test on iOS 4
+        [[UIApplication sharedApplication] openURL:
+         [NSURL URLWithString:@"prefs:root=LOCATION_SERVICES"]];
+    }
 }
 
 @end
